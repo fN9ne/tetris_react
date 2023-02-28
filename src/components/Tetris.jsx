@@ -28,7 +28,7 @@ const Tetris = () => {
 	const [bestScore, setBestScore] = useState(0);
 
 	const saveScore = (score) => {
-		localStorage.setItem('bestScore', score);
+		window.localStorage.setItem('bestScore', score);
 	}
 
 	useEffect(() => {
@@ -39,8 +39,8 @@ const Tetris = () => {
 	}, [score]);
 
 	useEffect(() => {
-		if (localStorage.getItem('bestScore')) {
-			setBestScore(localStorage.getItem('bestScore'));
+		if (window.localStorage.getItem('bestScore')) {
+			setBestScore(window.localStorage.getItem('bestScore'));
 		}
 	}, []);
 
