@@ -104,6 +104,9 @@ const Tetris = () => {
 				case 38:
 					playerRotate(stage, 1);
 					break;
+				case 13:
+					startGame();
+					break;
 			}
 		}
 	}

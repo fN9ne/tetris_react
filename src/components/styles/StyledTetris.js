@@ -13,7 +13,7 @@ export const StyledTetris = styled.div`
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 40px;
+	padding: 20px 0;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 900px;
